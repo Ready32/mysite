@@ -695,6 +695,9 @@ p {
     .ul-contacts {
         width: 304px;
         margin-bottom: 39px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
     }
 
     .copy_margin {
@@ -721,6 +724,8 @@ p {
         line-height: 30px;
         margin-top: 32px;
         width: 341px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .title_input {
@@ -760,6 +765,7 @@ p {
 
     .map {
         width: 100%;
+        height: 90px;
         margin-bottom: 32px;
         padding-left: 0;
         padding-right: 0;
