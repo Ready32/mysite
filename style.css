@@ -276,6 +276,7 @@ p {
 
 .width_li {
     width: 315px;
+    padding-left: 20px;
 }
 
 .margin_li {
@@ -337,12 +338,13 @@ p {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    width: 300px;
+    margin-bottom: 96px;
+    align-items: center;
 }
 
 .info_contacts {
     margin-right: 101px;
-    margin-bottom: 150px;
+    width: 300px;
 }
 
 .contacts_title {
@@ -418,29 +420,28 @@ p {
 }
 
 .message {
+    display: flex;
+    flex-direction: column;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.04em;
     color: #1F3F68;
     opacity: 0.8;
-    margin-bottom: 8px;
 }
 
 .text_mail {
     opacity: 0.4;
     border: 1px solid #356EAD;
     border-radius: 10px;
-    padding: 21px 340px 21px 42px;
-
+    padding: 21px 42px 21px;
     font-weight: 300;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.04em;
     color: #1F3F68;
-
     opacity: 0.2;
-    margin-bottom: 32px;
+    margin-top: 8px;
 }
 
 .Message {
@@ -453,7 +454,9 @@ p {
     letter-spacing: 0.04em;
     color: #1F3F68;
     opacity: 0.2;
-    padding: 21px 284px 93px 36px;
+    padding: 21px 36px 93px 36px;
+    margin-top: 8px;
+    height: 144px;
 }
 
 .sumbit {
@@ -468,6 +471,13 @@ p {
     border-radius: 10px;
     padding: 23px 183px;
     margin: 0 auto;
+    width: 428px;
+}
+
+.map {
+    max-width: 940px;
+    margin: 0 auto;
+    margin-bottom: 112px;
 }
 
 @media (max-width: 1024px) {
@@ -530,12 +540,40 @@ p {
     }
 
     .ul-contacts {
-        display: block;
         margin-bottom: 39px;
     }
 
     .copy_margin {
         padding-left: 0;
+    }
+
+
+    .menu_contacts {
+        margin-top: 10px;
+    }
+
+    .description {
+
+        margin-left: 124px;
+        margin-right: 124px;
+    }
+
+    .contacts {
+        flex-direction: column;
+        margin-bottom: 64px;
+    }
+
+    .info_contacts {
+        margin: 0;
+        margin-bottom: 64px;
+        margin-top: 50px;
+    }
+
+    .map {
+        width: 100%;
+        margin-bottom: 64px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
 }
@@ -656,6 +694,7 @@ p {
 
     .ul-contacts {
         width: 304px;
+        margin-bottom: 39px;
     }
 
     .copy_margin {
@@ -663,4 +702,66 @@ p {
         padding-bottom: 32px;
     }
 
+    .copy_margin {
+        padding-left: 0;
+    }
+
+
+    .menu_contacts {
+        margin-top: 10px;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 32px;
+        width: 341px;
+    }
+
+    .title_input {
+        font-size: 16px;
+        margin-bottom: 31px;
+    }
+
+    .input {
+        padding: 36px;
+
+    }
+
+    .message {
+        font-size: 14px;
+
+    }
+
+    .text_mail {
+        font-size: 14px;
+        width: 194px;
+        padding: 13px 54px 13px 22px;
+
+    }
+
+    .Message {
+        width: 194px;
+        height: 19px;
+        padding: 13px 54px 60px 22px;
+    }
+
+
+    .sumbit {
+        width: 270px;
+        padding: 15px 55px;
+        margin-top: 46px;
+    }
+
+    .map {
+        width: 100%;
+        margin-bottom: 32px;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
